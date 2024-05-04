@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Day In My Life - UCP 1</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 4.5rem;
+        background-color: #596470;
+      }
+      .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #6b4226;
+      }
+      .greeting {
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        color: #c9c1bc;
+      }
+      .card-body {
+        background-color: #babfc5;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .datetime {
+        font-size: 1rem;
+        margin-bottom: 0;
+        color: #c9c1bc;
+      }
+      .footer {
+        background-color: #373e45;
+        color: #c9c1bc;
+        padding: 20px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">A Day In My Life</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="greeting" id="greeting">Welcome!</h1>
+        </div>
+        <div class="col-md-6 text-right">
+          <p class="datetime" id="datetime"></p>
+        </div>
+      </div>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide mt-5"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="1.jpeg" alt="First slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="2.jpeg" alt="Second slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="3.jpeg" alt="Third slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="4.jpeg" alt="fourth slide" />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <h1 class="text-center">Bagaimana Hari Kita Sebagai Mahasiswa?</h1>
+          <p class="text-center">
+            Sebagai seorang mahasiswa kuliah, setiap harinya penuh dengan
+            berbagai aktivitas yang mendebarkan. Mulai dari bangun pagi untuk
+            menghadiri kuliah, bertemu dengan teman-teman di kampus,
+            menyelesaikan tugas-tugas, hingga terlibat dalam berbagai kegiatan.
+            Tidak lupa pula waktu yang dihabiskan untuk belajar Meski kadang
+            melelahkan, namun setiap momen tersebut menjadi bagian tak
+            terpisahkan dari perjalanan pendidikan yang membangun dan memperkaya
+            pengalaman hidup.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="text-center">Apa Saja yang Kita lakukan sehari-hari...</h3>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="5.jpeg" class="card-img-top" alt="Card 1" />
+            <div class="card-body">
+              <h5 class="card-title">Bangun</h5>
+              <p class="card-text">
+                Sebagai mahasiswa yang rajin, kita selalu bangun pagi dan
+                bersiap untuk pergi ke kampus dengan penuh semangat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="6.jpeg" class="card-img-top" alt="Card 2" />
+            <div class="card-body">
+              <h5 class="card-title">Kuliah & Nugas</h5>
+              <p class="card-text">
+                Setelah pagi sampai sore kita kuliah dan beraktivitas di kampus,
+                kita mengerjakan tugas di kos atau di rumah.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="7.jpeg" class="card-img-top" alt="Card 3" />
+            <div class="card-body">
+              <h5 class="card-title">Tidur lagi</h5>
+              <p class="card-text">
+                Setelah beraktivitas dan melakukan banyak kegiatan yang
+                melelahkan, kami memutuskan untuk tidur cepat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span>A Day In My Life - 20220140050</span>
+      </div>
+    </footer>
+
+    <script>
+      function updateDateTime() {
+        const currentDate = new Date();
+        let greeting = "";
+        const hours = currentDate.getHours();
+        if (hours >= 5 && hours < 12) {
+          greeting = "Good morning!";
+        } else if (hours >= 12 && hours < 18) {
+          greeting = "Good afternoon!";
+        } else {
+          greeting = "Good evening!";
+        }
+        const formattedDate = currentDate.toLocaleDateString("en-US", {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        });
+        const formattedTime = currentDate.toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+        document.getElementById("greeting").innerText = greeting;
+        document.getElementById("datetime").innerText =
+          formattedDate + " " + formattedTime;
+      }
+      updateDateTime();
+      setInterval(updateDateTime, 60000);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
